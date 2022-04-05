@@ -42,80 +42,37 @@
 			<div></div>
 		</div>
 	</div>
+	<!-- Header area  -->
 	<header class="header-area">
-		<div class="header-navbar-middle d-none d-lg-block">
-			<div class="container">
-				<div class="
-							navbar-brand-wrapper
-							py-3
-							d-flex
-							justify-content-between
-							align-items-center
-						">
+		<div class="header-navbar-bottom pt-2 pt-lg-0 border-top border-light">
+			<div class="container themeix-menu-selector">
+				<nav class="navbar navbar-expand-md ">
+					<!-- Brand -->
+
 					<a class="navbar-brand" href="index.html">
 						<img class="lazyload" src="assets/images/header-brand.png" alt="image" />
 					</a>
-				</div>
-			</div>
-		</div>
-		<div class="header-navbar-bottom pt-2 pt-lg-0 border-top border-light">
-			<div class="container themeix-menu-selector">
-				<nav class="navbar navbar-expand-lg">
-					<div class="collapse navbar-collapse" id="main_nav">
-						<ul class="navbar-nav me-auto">
+
+					<!-- Toggler/collapsibe Button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- Navbar links -->
+					<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="index.html">Home
 								</a>
-
 								<ul class="dropdown-menu">
 									<li>
-										<a class="dropdown-item" href="index.html"> Home v1 </a>
+										<a class="dropdown-item" href="index-2.html"> Home 2 </a>
 									</li>
 									<li>
-										<a class="dropdown-item" href="index-2.html"> Home v2 </a>
+										<a class="dropdown-item" href="index-3.html"> Home 3</a>
 									</li>
-									<li>
-										<a class="dropdown-item" href="index-3.html"> Home v3 </a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="index-4.html"> Home v4 </a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="index-5.html"> Home v5 </a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="index-6.html"> Home v6 </a>
-									</li>
-									<li>
-										<a class="dropdown-item dropdown-toggle" href="#">
-											Post Layouts</a>
-										<ul class="submenu dropdown-menu">
-											<li>
-												<a class="dropdown-item" href="single.html">Blog Layout 1</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="single-2.html">Blog Layout 2</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="single-3.html">Blog Layout 3</a>
-											</li>
-											<li>
-												<a class="dropdown-item dropdown-toggle" href="#">
-													Menu level
-												</a>
-												<ul class="submenu dropdown-menu">
-													<li>
-														<a class="dropdown-item" href="#">
-															Menu level 4</a>
-													</li>
-													<li>
-														<a class="dropdown-item" href="#">
-															Menu level 4</a>
-													</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
+
 								</ul>
 							</li>
 							<li class="nav-item dropdown has-megamenu">
@@ -125,11 +82,11 @@
 										<div class="col-md-3">
 											<h6 class="text-danger">Home Variations</h6>
 											<ul class="list-inline">
-												<li><a href="index-2.html">Classic Blog</a></li>
-												<li><a href="index-3.html">Corporate Blog</a></li>
-												<li><a href="index-4.html">Recipe Blog</a></li>
-												<li><a href="index-5.html">Sports Blog</a></li>
-												<li><a href="index-6.html">Full Width Blog</a></li>
+												<li><a href="#">Classic Blog</a></li>
+												<li><a href="#">Corporate Blog</a></li>
+												<li><a href="#">Recipe Blog</a></li>
+												<li><a href="#">Sports Blog</a></li>
+												<li><a href="#">Full Width Blog</a></li>
 											</ul>
 										</div>
 										<div class="col-md-3">
@@ -150,7 +107,7 @@
 												<li>
 													<a href="forgot-password.html">Forgot Password</a>
 												</li>
-												<li><a href="faq.html">FAQ</a></li>
+												<li><a href="#">FAQ</a></li>
 												<li>
 													<a href="privacy-policy.html">Privacy Policy</a>
 												</li>
@@ -207,19 +164,19 @@
 							<li class="nav-item">
 								<a class="nav-link" href="contact.html"> Contact </a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="login.html"> Login </a>
-							</li>
-							<li class="nav-item">
+
+							<!-- <li class="nav-item">
 								<a class="nav-link" href="#">
 									Buy Now <span>NEW</span></a>
-							</li>
+							</li> -->
+
 						</ul>
 					</div>
-					<div class="search-modal" data-bs-toggle="modal" data-bs-target="#search-modal">
-						<a class="nav-link" href="#"> <i class="fas fa-search"></i> </a>
-					</div>
+					<a class="login-btn " href="login.html"> Login </a>
+					<a href="#" class="search-btn header-search"><i class="fa fa-search"></i></a>
 				</nav>
+
+
 				<div class="modal fade" id="search-modal" data-bs-backdrop="static">
 					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 					<div class="modal-dialog">
@@ -719,50 +676,6 @@
 
 					<div class="sidebar-widget mb-3 border border-light rounded">
 						<div class="wrapper">
-							<ul class="nav nav-tabs" id="tab-menu">
-								<li class="nav-item">
-									<a class="active" data-bs-toggle="tab" href="#tab1">Most Viewed</a>
-								</li>
-								<li class="nav-item">
-									<a class="" data-bs-toggle="tab" href="#tab2">
-										Recently Viewed</a>
-								</li>
-							</ul>
-							<div class="tab-content" id="tab-content">
-								<div class="tab-pane fade show active" id="tab1">
-									<ul class="counter-post list-inline">
-										<li class="counter-post-item">
-											<a href="single.html">How to play youtube videos at custom speed</a>
-										</li>
-										<li class="counter-post-item">
-											<a href="single.html">How to search emails in gmail by specific time</a>
-										</li>
-										<li class="counter-post-item">
-											<a href="single.html">How to search emails in gmail by specific time</a>
-										</li>
-										<li class="counter-post-item">
-											<a href="single.html">Let others upload videos to your youtube channel</a>
-										</li>
-										<li class="counter-post-item">
-											<a href="single.html">How to search emails in gmail by specific time</a>
-										</li>
-									</ul>
-								</div>
-								<div class="tab-pane fade" id="tab2">
-									<ul class="counter-post list-inline">
-										<li class="list-inline-item">
-											<a href="single.html">How to add an xml sitemap to your blogger blog</a>
-										</li>
-										<li class="list-inline-item m-0">
-											<a href="single.html">The best twitter search tricks</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="sidebar-widget mb-3 border border-light rounded">
-						<div class="wrapper">
 							<div class="row">
 								<div class="col-12">
 									<div class="section-title-block d-flex pb-3">
@@ -832,115 +745,137 @@
 			</div>
 		</div>
 	</div>
-	<section class="cta-area py-5 bg-light">
-		<ul class="circles">
-			<li><i class="fa fa-envelope-open fa-5x"></i></li>
-			<li><i class="fa fa-envelope fa-4x"></i></li>
-			<li><i class="fa fa-envelope fa-3x"></i></li>
-			<li><i class="fa fa-envelope-open fa-2x"></i></li>
-			<li><i class="fa fa-envelope fa-1x"></i></li>
-			<li><i class="fa fa-envelope fa-2x"></i></li>
-			<li><i class="fa fa-envelope fa-1x"></i></li>
-			<li><i class="fa fa-envelope fa-3x"></i></li>
-			<li><i class="fa fa-envelope fa-2x"></i></li>
-			<li><i class="fa fa-envelope fa-5x"></i></li>
-		</ul>
 
-		<div class="container text-center z-index-10 position-relative">
-			<div class="row">
-				<div class="col-md-8 m-auto">
-					<h2 class="text-secondary">Subscribe to see what we're thinking</h2>
-					<p>
-						Subscribe to get access to premium content or contact us if you
-						have any questions.
-					</p>
-					<a href="#" class="btn btn-outline-light bg-danger text-white box-hover">Subscribe Now <i
-							class="fas fa-envelope-open-text ms-1"></i></a>
+	<!-- Footer v2  -->
+
+	<footer class="footer-1 footer-wrap">
+		<div class="footer-widgets-wrapper theme-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xl-3">
+						<div class="about-Ajkerdin pe-md-5 pe-xl-0">
+							<a class="footer-logo" href="index.html">
+								<img src="assets/images/footer-barand.png" alt="Ajkerdin">
+							</a>
+							<p>Ajkerdin Logistics Services is a global supplier of transport and logistics solutions. We
+								have offices in more than 20 countries and agents.</p>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-2">
+						<div class="single-footer-wid ps-xl-4">
+							<div class="wid-title">
+								<h6>Our Divisions</h6>
+							</div>
+							<ul>
+								<li><a href="about.html">What We Do</a></li>
+								<li><a href="contact.html">Request a Freight</a></li>
+								<li><a href="services.html">Track &amp; Trace</a></li>
+								<li><a href="services.html">Rail Freight</a></li>
+								<li><a href="services.html">Maritime Transport</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-2">
+						<div class="single-footer-wid ps-xl-2">
+							<div class="wid-title">
+								<h6>Our Services</h6>
+							</div>
+							<ul>
+								<li><a href="#">What We Do</a></li>
+								<li><a href="#">Request a Freight</a></li>
+								<li><a href="#">Track &amp; Trace</a></li>
+								<li><a href="#">Rail Freight</a></li>
+								<li><a href="#">Maritime Transport</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-2">
+						<div class="single-footer-wid">
+							<div class="wid-title">
+								<h6>Industry Sectors</h6>
+							</div>
+							<ul>
+								<li><a href="#">Electronics Industry</a></li>
+								<li><a href="#">Manufacturing</a></li>
+								<li><a href="#">Semicon &amp; Solar</a></li>
+								<li><a href="#">Oil &amp; Gas Cargo</a></li>
+								<li><a href="#">Energy &amp; Chemicals</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-xl-3">
+						<div class="single-footer-wid site-info-widget">
+							<div class="wid-title">
+								<h6>Get In Touch</h6>
+							</div>
+							<div class="get-in-touch">
+								<div class="single-contact-info">
+									<div class="icon id1">
+										<i class="fa fa-map-marker-alt"></i>
+									</div>
+									<div class="contact-info">
+										<span>94 Roa Malaka, West Jakarta City, UK</span>
+									</div>
+								</div>
+								<div class="single-contact-info">
+									<div class="icon id2">
+										<i class="fa fa-phone"></i>
+									</div>
+									<div class="contact-info">
+										<span>+91-7687287658</span>
+									</div>
+								</div>
+								<div class="single-contact-info">
+									<div class="icon id3">
+										<i class="fa fa-envelope"></i>
+									</div>
+									<div class="contact-info">
+										<span>info@ajkerdin.com</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="newsletter_widget">
+								<div class="newsletter_box">
+									<form action="#">
+										<input type="email" placeholder="Enter email address" required="">
+										<button class="submit-btn" type="submit"><i
+												class="fas fa-envelope-open"></i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--/// Footer Area /// -->
-	<footer class="footer-area pt-5 pb-2">
-		<div class="container">
-			<div class="row">
-				<div class="
-							col-xxl-5 col-xl-3 col-lg-6 col-md-6 col-sm-6
-							pb-3
-							d-flex
-							align-items-center
-						">
-					<div class="footer-widget pe-2">
-						<img class="footer-logo mb-3" src="assets/images/footer-brand.png" alt="" />
-						<p>
-							Ajkerdin is well optimized template for any kinds of newspaper,
-							blog, magazine etc website
-						</p>
-					</div>
-				</div>
-				<div class="col-xxl-2 col-xl-3 col-lg-6 col-md-6 col-sm-6 pb-3">
-					<div class="footer-widget">
-						<h4 class="mb-3">Navigation</h4>
-						<ul class="footer-nav list-inline">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Advertisement</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-xxl-2 col-xl-3 col-lg-6 col-md-6 col-sm-6 pb-3">
-					<div class="footer-widget">
-						<h4 class="mb-3">Social Media</h4>
-						<ul class="footer-nav list-inline">
-							<li>
-								<a href="#"><span class="icon"><i class="fab fa-facebook-f"></i></span>Facebook</a>
-							</li>
-							<li>
-								<a href="#"><span class="icon"><i class="fab fa-twitter"></i></span>Twitter</a>
-							</li>
-							<li>
-								<a href="#"><span class="icon"><i class="fab fa-instagram"></i></span>Instagram</a>
-							</li>
-							<li>
-								<a href="#"><span class="icon"><i class="fab fa-linkedin"></i></span>Linkedin</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 pb-3">
-					<div class="footer-widget">
-						<h4 class="mb-3">Contact Info</h4>
-						<ul class="footer-nav list-inline">
-							<li>
-								<a href="#"><span class="icon"><i class="fas fa-map-pin"></i></span>Dhaka,
-									Bangladesh</a>
-							</li>
-							<li>
-								<a href="#"><span class="icon"><i
-											class="fas fa-envelope-open"></i></span>ajkerdin@gmail.com</a>
-							</li>
-							<li>
-								<a href="#"><span class="icon"><i class="fas fa-phone"></i></span>+8801601......</a>
-							</li>
-							<!-- <li><a href="#"><span class="icon"><i class="fas fa-fax"></i></span>+1 (123) 123 456</a></li> -->
-						</ul>
+
+		<div class="footer-bottom">
+			<div class="container align-items-center">
+				<div class="bottom-content-wrapper border-1 border-top border-dark">
+					<div class="row">
+						<div class="col-md-6 col-12">
+							<div class="copy-rights">
+								<p>©2022 <strong>Ajkerdin</strong>, All Rights Reserved</p>
+							</div>
+						</div>
+						<div class="col-md-6 mt-2 mt-md-0 col-12 text-md-end">
+							<div class="social-links">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+								<a href="#"><i class="fab fa-youtube"></i></a>
+								<a href="#"><i class="fab fa-linkedin"></i></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 mt-4 border-1 border-top pt-2 border-light">
-					<div class="footer-copyright text-sm text-center">
-						<span>
-							<p>
-								&copy; <span id="spanYear"></span> Ajkerdin - all right
-								reserved
-							</p>
-						</span>
-					</div>
-				</div>
-			</div>
-			<a href="#" class="footer-back"><i class="fas fa-chevron-up"></i></a>
 		</div>
 	</footer>
 

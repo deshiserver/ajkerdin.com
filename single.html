@@ -42,7 +42,7 @@
 			<div></div>
 		</div>
 	</div>
-	<!-- Header area  -->
+	<!-- Header  -->
 	<header class="header-area">
 		<div class="header-navbar-bottom pt-2 pt-lg-0 border-top border-light">
 			<div class="container themeix-menu-selector">
@@ -50,7 +50,7 @@
 					<!-- Brand -->
 
 					<a class="navbar-brand" href="index.html">
-						<img class="lazyload" src="assets/images/header-brand.png" alt="image" />
+						<img class=" ls-is-cached lazyloaded" src="assets/images/header-brand.png" alt="image">
 					</a>
 
 					<!-- Toggler/collapsibe Button -->
@@ -173,10 +173,17 @@
 						</ul>
 					</div>
 					<a class="login-btn " href="login.html"> Login </a>
-					<a href="#" class="search-btn header-search"><i class="fa fa-search"></i></a>
+					<a href="#" data-bs-toggle="modal" data-bs-target="#myModal" class="search-btn header-search"><i
+							class="fa fa-search"></i></a>
 				</nav>
 
 
+
+
+				<!-- Modal  -->
+				<!-- Search  -->
+
+				<!-- Old Modals  -->
 				<div class="modal fade" id="search-modal" data-bs-backdrop="static">
 					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 					<div class="modal-dialog">
@@ -185,13 +192,42 @@
 								<form class="forms">
 									<div class="input-group">
 										<span class="input-group-text"><i class="fas fa-search"></i></span>
-										<input type="text" class="form-control" placeholder="Search Here" />
+										<input type="text" class="form-control" placeholder="Search Here">
 									</div>
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- Old Modals  -->
+
+				<!-- The Modal -->
+				<div class="modal" id="myModal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">Search Here .</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<!-- Modal body -->
+							<div class="modal-body">
+								<div class="search-modal-wrap">
+									<input class="form-control" type="text" placeholder="Search..">
+								</div>
+							</div>
+
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-m-search">Search</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Modal  -->
 			</div>
 		</div>
 	</header>

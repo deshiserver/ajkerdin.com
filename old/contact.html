@@ -42,37 +42,80 @@
 			<div></div>
 		</div>
 	</div>
-	<!-- Header  -->
 	<header class="header-area">
+		<div class="header-navbar-middle d-none d-lg-block">
+			<div class="container">
+				<div class="
+							navbar-brand-wrapper
+							py-3
+							d-flex
+							justify-content-between
+							align-items-center
+						">
+					<a class="navbar-brand" href="index.html">
+						<img class="lazyload" src="assets/images/header-brand.png" alt="image" />
+					</a>
+				</div>
+			</div>
+		</div>
 		<div class="header-navbar-bottom pt-2 pt-lg-0 border-top border-light">
 			<div class="container themeix-menu-selector">
-				<nav class="navbar navbar-expand-md ">
-					<!-- Brand -->
-
-					<a class="navbar-brand" href="index.html">
-						<img class=" ls-is-cached lazyloaded" src="assets/images/header-brand.png" alt="image">
-					</a>
-
-					<!-- Toggler/collapsibe Button -->
-					<button class="navbar-toggler" type="button" data-toggle="collapse"
-						data-target="#collapsibleNavbar">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<!-- Navbar links -->
-					<div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-						<ul class="navbar-nav">
+				<nav class="navbar navbar-expand-lg">
+					<div class="collapse navbar-collapse" id="main_nav">
+						<ul class="navbar-nav me-auto">
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="index.html">Home
 								</a>
+
 								<ul class="dropdown-menu">
 									<li>
-										<a class="dropdown-item" href="index-2.html"> Home 2 </a>
+										<a class="dropdown-item" href="index.html"> Home v1 </a>
 									</li>
 									<li>
-										<a class="dropdown-item" href="index-3.html"> Home 3</a>
+										<a class="dropdown-item" href="index-2.html"> Home v2 </a>
 									</li>
-
+									<li>
+										<a class="dropdown-item" href="index-3.html"> Home v3 </a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="index-4.html"> Home v4 </a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="index-5.html"> Home v5 </a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="index-6.html"> Home v6 </a>
+									</li>
+									<li>
+										<a class="dropdown-item dropdown-toggle" href="#">
+											Post Layouts</a>
+										<ul class="submenu dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="single.html">Blog Layout 1</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="single-2.html">Blog Layout 2</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="single-3.html">Blog Layout 3</a>
+											</li>
+											<li>
+												<a class="dropdown-item dropdown-toggle" href="#">
+													Menu level
+												</a>
+												<ul class="submenu dropdown-menu">
+													<li>
+														<a class="dropdown-item" href="#">
+															Menu level 4</a>
+													</li>
+													<li>
+														<a class="dropdown-item" href="#">
+															Menu level 4</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown has-megamenu">
@@ -82,11 +125,11 @@
 										<div class="col-md-3">
 											<h6 class="text-danger">Home Variations</h6>
 											<ul class="list-inline">
-												<li><a href="#">Classic Blog</a></li>
-												<li><a href="#">Corporate Blog</a></li>
-												<li><a href="#">Recipe Blog</a></li>
-												<li><a href="#">Sports Blog</a></li>
-												<li><a href="#">Full Width Blog</a></li>
+												<li><a href="index-2.html">Classic Blog</a></li>
+												<li><a href="index-3.html">Corporate Blog</a></li>
+												<li><a href="index-4.html">Recipe Blog</a></li>
+												<li><a href="index-5.html">Sports Blog</a></li>
+												<li><a href="index-6.html">Full Width Blog</a></li>
 											</ul>
 										</div>
 										<div class="col-md-3">
@@ -107,7 +150,7 @@
 												<li>
 													<a href="forgot-password.html">Forgot Password</a>
 												</li>
-												<li><a href="#">FAQ</a></li>
+												<li><a href="faq.html">FAQ</a></li>
 												<li>
 													<a href="privacy-policy.html">Privacy Policy</a>
 												</li>
@@ -164,26 +207,23 @@
 							<li class="nav-item">
 								<a class="nav-link" href="contact.html"> Contact </a>
 							</li>
-
+							<li class="nav-item">
+								<a class="nav-link" href="login.html"> Login </a>
+							</li>
 							<!-- <li class="nav-item">
-								<a class="nav-link" href="#">
-									Buy Now <span>NEW</span></a>
-							</li> -->
-
+									<a
+										class="nav-link"
+										href="#"
+									>
+										Buy Now <span>NEW</span></a
+									>
+								</li> -->
 						</ul>
 					</div>
-					<a class="login-btn " href="login.html"> Login </a>
-					<a href="#" data-bs-toggle="modal" data-bs-target="#myModal" class="search-btn header-search"><i
-							class="fa fa-search"></i></a>
+					<div class="search-modal" data-bs-toggle="modal" data-bs-target="#search-modal">
+						<a class="nav-link" href="#"> <i class="fas fa-search"></i> </a>
+					</div>
 				</nav>
-
-
-
-
-				<!-- Modal  -->
-				<!-- Search  -->
-
-				<!-- Old Modals  -->
 				<div class="modal fade" id="search-modal" data-bs-backdrop="static">
 					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 					<div class="modal-dialog">
@@ -192,249 +232,146 @@
 								<form class="forms">
 									<div class="input-group">
 										<span class="input-group-text"><i class="fas fa-search"></i></span>
-										<input type="text" class="form-control" placeholder="Search Here">
+										<input type="text" class="form-control" placeholder="Search Here" />
 									</div>
 								</form>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- Old Modals  -->
-
-				<!-- The Modal -->
-				<div class="modal" id="myModal">
-					<div class="modal-dialog">
-						<div class="modal-content">
-
-							<!-- Modal Header -->
-							<div class="modal-header">
-								<h4 class="modal-title">Search Here .</h4>
-								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-							</div>
-
-							<!-- Modal body -->
-							<div class="modal-body">
-								<div class="search-modal-wrap">
-									<input class="form-control" type="text" placeholder="Search..">
-								</div>
-							</div>
-
-							<!-- Modal footer -->
-							<div class="modal-footer">
-								<button type="button" class="btn btn-m-search">Search</button>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<!-- Modal  -->
 			</div>
 		</div>
 	</header>
 	<!--/// Page Content /// -->
-	<div class="page-content-area pb-5">
+	<div class="blog-area pb-5">
 		<div class="themeix-page-title-area py-4 bg-light">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Authors</h1>
+						<h1>Contact</h1>
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<div class="container pt-5">
 			<div class="row">
-				<div class="col-md-6 col-lg-6 mb-3">
-					<div class="border border-light box-hover p-3">
-						<div class="author-name-full m-0">
-							<img class="avata-big rounded-circle" src="assets/images/author-img2.jpg"
-								alt="author image" />
-							<div class="author-bio-content">
-								<h4 class="mb-0"><a href="author.html">Jhon Doe</a></h4>
-								<p class="small mb-1">Online professional</p>
-								<ul class="list-inline mb-3">
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fab fa-twitter"> </i>
-										</a>
-									</li>
+				<div class="col-xl-7 col-lg-7">
+					<div class="contact-info-block mb-3 pe-5">
+						<p class="pb-2">
+							Of often she the of from word this have generality freshlybrewed
+							roasted on the concise plans. Back to essential about why that
+							salutary.
+						</p>
+						<ul class="list-unstyled">
+							<li class="mb-2">
+								<i class="fas fa-map-marker-alt me-2"></i>New South Sales
+								Road, Toronto, CA
+							</li>
+							<li class="mb-2">
+								<i class="fas fa-phone me-2"></i>+1 (123) 123 456
+							</li>
+							<li class="mb-2">
+								<i class="fas fa-envelope me-2"></i>support@themeix.com
+							</li>
+						</ul>
+					</div>
 
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fas fa-envelope"> </i>
-										</a>
-									</li>
-								</ul>
+					<div id="accordion-faq">
+						<div class="card">
+							<div class="card-header mb-1" id="headingOne">
+								<button class="btn btn-link bg-light" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true">
+									Pork kevin burgdoggen swine?
+								</button>
 							</div>
-						</div>
-						<p class="bio border-top border-light pt-2">
-							Own his easy the consider though the fall its spineless,
-							entirely if never texts. To being weather. Pouring surprised her
-							compared to expected we the about being there the he the morning
-							if many
-						</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 mb-3">
-					<div class="border border-light box-hover p-3">
-						<div class="author-name-full m-0">
-							<img class="avata-big rounded-circle" src="assets/images/author-img3.jpg"
-								alt="author image" />
-							<div class="author-bio-content">
-								<h4 class="mb-0"><a href="author.html">Robert Hill</a></h4>
-								<p class="small mb-1">CEO, Themeix</p>
-								<ul class="list-inline mb-3">
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fas fa-envelope"> </i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<p class="bio border-top border-light pt-2">
-							Own his easy the consider though the fall its spineless,
-							entirely if never texts. To being weather. Pouring surprised her
-							compared to expected we the about being there the he the morning
-							if many
-						</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 mb-3">
-					<div class="border border-light box-hover p-3">
-						<div class="author-name-full m-0">
-							<img class="avata-big rounded-circle" src="assets/images/author-img.jpg"
-								alt="author image" />
-							<div class="author-bio-content">
-								<h4 class="mb-0"><a href="author.html">K. Wood</a></h4>
-								<p class="small mb-1">Photographer</p>
-								<ul class="list-inline mb-3">
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fas fa-envelope"> </i>
-										</a>
-									</li>
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fab fa-pinterest"> </i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<p class="bio border-top border-light pt-2">
-							Own his easy the consider though the fall its spineless,
-							entirely if never texts. To being weather. Pouring surprised her
-							compared to expected we the about being there the he the morning
-							if many
-						</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 mb-3">
-					<div class="border border-light box-hover p-3">
-						<div class="author-name-full m-0">
-							<img class="avata-big rounded-circle" src="assets/images/author-img4.jpg"
-								alt="author image" />
-							<div class="author-bio-content">
-								<h4 class="mb-0"><a href="author.html">Hast Foot</a></h4>
-								<p class="small mb-1">Freelance Writer</p>
-								<ul class="list-inline mb-3">
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fab fa-linkedin-in"> </i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<p class="bio border-top border-light pt-2">
-							Own his easy the consider though the fall its spineless,
-							entirely if never texts. To being weather. Pouring surprised her
-							compared to expected we the about being there the he the morning
-							if many
-						</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 mb-3">
-					<div class="border border-light box-hover p-3">
-						<div class="author-name-full m-0">
-							<img class="avata-big rounded-circle" src="assets/images/author-img5.jpg"
-								alt="author image" />
-							<div class="author-bio-content">
-								<h4 class="mb-0"><a href="author.html">Micle Hill</a></h4>
-								<p class="small mb-1">Businessman</p>
-								<ul class="list-inline mb-3">
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fab fa-linkedin-in"> </i>
-										</a>
-									</li>
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fas fa-envelope"> </i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<p class="bio border-top border-light pt-2">
-							Own his easy the consider though the fall its spineless,
-							entirely if never texts. To being weather. Pouring surprised her
-							compared to expected we the about being there the he the morning
-							if many
-						</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 mb-3">
-					<div class="border border-light box-hover p-3">
-						<div class="author-name-full m-0">
-							<img class="avata-big rounded-circle" src="assets/images/author-img7.jpg"
-								alt="author image" />
-							<div class="author-bio-content">
-								<h4 class="mb-0"><a href="author.html">Neo Tom</a></h4>
-								<p class="small mb-1">Writer</p>
-								<ul class="list-inline mb-3">
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fab fa-facebook-f"></i>
-										</a>
-									</li>
 
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fab fa-linkedin-in"> </i>
-										</a>
-									</li>
-									<li class="list-inline-item">
-										<a class="social-icon" href="#">
-											<i class="me-1 fas fa-envelope"> </i>
-										</a>
-									</li>
-								</ul>
+							<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+								<div class="card-body">
+									Short ribs tri-tip shankle, pork biltong bacon porchetta
+									burgdoggen rump pork chop short loin tenderloin meatball
+									spare ribs shoulder porchetta.
+								</div>
 							</div>
 						</div>
-						<p class="bio border-top border-light pt-2">
-							Own his easy the consider though the fall its spineless,
-							entirely if never texts. To being weather. Pouring surprised her
-							compared to expected we the about being there the he the morning
-							if many
+						<div class="card">
+							<div class="card-header mb-1" id="headingTwo">
+								<button class="btn btn-link bg-light collapsed" data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo" aria-expanded="false">
+									Capicola short ribs sausage turducken?
+								</button>
+							</div>
+							<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Et pri affert debitis alienum, libris impetus ex ludus ex
+									democritum adolescens mea et, te quot has mundi posidonium
+									has
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header mb-1" id="headingThree">
+								<button class="btn btn-link bg-light collapsed" data-bs-toggle="collapse"
+									data-bs-target="#collapseThree" aria-expanded="false">
+									meatloaf biltong burgdoggen?
+								</button>
+							</div>
+							<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+								<div class="card-body">
+									Et pri affert debitis alienum, libris impetus ex ludus ex
+									democritum adolescens mea et, te quot has mundi posidonium
+									has
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-5 col-lg-5">
+					<div class="contact-form">
+						<h2 class="text-secondary mb-2">Send Us Message</h2>
+						<p>
+							Please fill up the form bellow with your valuable opinion,
+							feedback or any suggession to us
 						</p>
+						<form data-aos="fade-in" class="form pt-2">
+							<div class="row">
+								<div class="col-xl-6 mb-2">
+									<input class="form-control contact-input" type="text"
+										placeholder="Full Your Name" />
+								</div>
+								<div class="col-xl-6 mb-2">
+									<input class="form-control contact-input" type="email"
+										placeholder="Email Address" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xl-6 mb-2">
+									<input class="form-control contact-input" type="text" placeholder="Phone Number" />
+								</div>
+								<div class="col-xl-6 mb-2">
+									<input class="form-control contact-input" type="text" placeholder="Subject" />
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 mb-2">
+									<textarea class="form-control contact-input" name="message"
+										placeholder="Write Message"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="subs-btn">
+										<a class="btn btn-danger bg-hover-danger text-white" href="#">Send Message
+										</a>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!--/// Contact Area /// -->
 	<section class="cta-area py-5 bg-light">
 		<ul class="circles">
 			<li><i class="fa fa-envelope-open fa-5x"></i></li>

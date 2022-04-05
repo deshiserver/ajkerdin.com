@@ -22091,3 +22091,15 @@ footer .footer-bottom .social-links a:last-of-type {
 .border-dark {
     border-color: #3d3d40 !important;
 }
+
+.btn-m-search {
+    color: #fff;
+    background-color: #FF6E25;
+    border-color: #FF6E25;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn-m-search:hover {
+    color: #fff;
+}

@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/trialrr/public_html/ajkerdin/
+    - export REPOPATH=/home/trialrr/ajkerdin/
+    - rsync -aP --exclude '.env' ${REPOPATH}/ ${DEPLOYPATH}
